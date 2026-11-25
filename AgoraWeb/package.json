@@ -1,0 +1,14 @@
+{
+  "name": "agora-incoming",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@docsvision/webclient": "6.1.15"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3"
+  }
+}

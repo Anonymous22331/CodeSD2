@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <IsPackable>false</IsPackable>
+    <AssemblyName>AgoraApprovalStages</AssemblyName>
+  </PropertyGroup>
+  <ItemGroup>
+    <DocsvisionAssembly Include="@(DocsvisionCommonAssembly);@(DocsvisionApprovalObjectModelAssembly)" />
+  </ItemGroup>
+</Project>

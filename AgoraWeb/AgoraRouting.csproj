@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <SignAssembly Condition="'$(AgoraSigningKey)' != ''">true</SignAssembly>
+    <AssemblyOriginatorKeyFile Condition="'$(AgoraSigningKey)' != ''">$(AgoraSigningKey)</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    <DocsvisionAssembly Include="@(DocsvisionCommonAssembly);@(DocsvisionWebAssembly);@(DocsvisionApprovalWebAssembly)" />
+  </ItemGroup>
+</Project>

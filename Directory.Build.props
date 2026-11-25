@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>12.0</LangVersion>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <Deterministic>true</Deterministic>
+    <DocsvisionCommonDir Condition="'$(DocsvisionCommonDir)' == ''">$(ProgramFiles)\Docsvision\Common</DocsvisionCommonDir>
+    <DocsvisionWebDir Condition="'$(DocsvisionWebDir)' == ''">$(ProgramFiles)\Docsvision\WebClient</DocsvisionWebDir>
+  </PropertyGroup>
+  <Import Project="DocsvisionSdk.props" />
+</Project>

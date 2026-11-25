@@ -1,0 +1,16 @@
+<Project>
+  <Target Name="VerifyDocsvisionSdk" BeforeTargets="ResolveAssemblyReferences">
+    <Error Condition="'%(DocsvisionAssembly.Identity)' != '' and !Exists('%(DocsvisionAssembly.Identity)')"
+           Text="Docsvision SDK assembly is missing: %(DocsvisionAssembly.Identity). Set DocsvisionCommonDir and DocsvisionWebDir to the installed DV_EDU SDK folders." />
+    <GetFileHash Files="@(DocsvisionAssembly)" Algorithm="SHA256">
+      <Output TaskParameter="Items" ItemName="_DocsvisionBinaries" />
+    </GetFileHash>
+    <Error Condition="'%(_DocsvisionBinaries.FileHash)' != '%(_DocsvisionBinaries.ExpectedHash)'"
+           Text="Docsvision SDK mismatch for %(_DocsvisionBinaries.Identity). Use the DV_EDU assembly with file version %(_DocsvisionBinaries.Version) and SHA-256 %(_DocsvisionBinaries.ExpectedHash)." />
+    <ItemGroup>
+      <Reference Include="@(DocsvisionAssembly)">
+        <Private>false</Private>
+      </Reference>
+    </ItemGroup>
+  </Target>
+</Project>

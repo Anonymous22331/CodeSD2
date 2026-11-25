@@ -1,0 +1,19 @@
+<Project>
+  <ItemGroup>
+    <DocsvisionApprovalObjectModelAssembly Include="$(DocsvisionCommonDir)/DocsVision.ApprovalDesigner.ObjectModel.dll" Version="6.1.159.57734" ExpectedHash="DCBAB2F24AD27DB4F0FC050EA40973C98D2BF1CB128195241A86EF1F84513A70" />
+    <DocsvisionApprovalWebAssembly Include="$(DocsvisionWebDir)/DocsVision.Approval.WebClient.dll" Version="6.1.1568.19570" ExpectedHash="46EBA4726748187F30B26D6FECAFB5C9B9BB4BA71BDD1545A2A5A5E59E92F3E6" />
+    <DocsvisionCommonAssembly Include="$(DocsvisionCommonDir)/DocsVision.BackOffice.ObjectModel.dll" Version="6.1.357.31083" ExpectedHash="76B2319297150F96260F28D9585D09FEB1F4C285F2869B2483E91EEE2A1D92BF" />
+    <DocsvisionCommonAssembly Include="$(DocsvisionCommonDir)/DocsVision.Platform.dll" Version="6.1.1004.62366" ExpectedHash="7A916D7D815D9AF959A013588ED69CFB4BE82F4D8EB3ADCDBE446108450EB2B1" />
+    <DocsvisionCommonAssembly Include="$(DocsvisionCommonDir)/DocsVision.Platform.ObjectManager.dll" Version="6.1.1004.62366" ExpectedHash="CB33A229A5073A9A0121A242133A524F108A588C883409AFBDD1B0E31DCAE9B8" />
+    <DocsvisionCommonAssembly Include="$(DocsvisionCommonDir)/DocsVision.Platform.ObjectModel.dll" Version="6.1.1004.62366" ExpectedHash="48B11040E706BED6BE9E95A565ECAC8860C19DABE799FF09C159459BFC7C4E15" />
+    <DocsvisionWorkflowAssembly Include="$(DocsvisionCommonDir)/DocsVision.Workflow.Functions.dll" Version="6.1.352.51963" ExpectedHash="92F19F5047CEDE1D0B42E02A1929BBC4FABCC03359A36A06B859CEEF892429D4" />
+    <DocsvisionWorkflowAssembly Include="$(DocsvisionCommonDir)/DocsVision.Workflow.Gates.dll" Version="6.1.352.51963" ExpectedHash="1A8D68EDE3F57712023953A72251262F8E676D30B0CA1C38A91B2101EB007F70" />
+    <DocsvisionWorkflowAssembly Include="$(DocsvisionCommonDir)/DocsVision.Workflow.Interfaces.dll" Version="6.1.352.51963" ExpectedHash="E524505A60D23C4C1D25FCB3420C73F6A78D42EC32061C005C14BB45F5FEF3E5" />
+    <DocsvisionWorkflowAssembly Include="$(DocsvisionCommonDir)/DocsVision.Workflow.Objects.dll" Version="6.1.352.51963" ExpectedHash="44AA315EE5D9F261CD3CE48FB84615AACC81D702E190FA25857298D5A2EFBAD7" />
+    <DocsvisionWorkflowAssembly Include="$(DocsvisionCommonDir)/DocsVision.Workflow.Runtime.dll" Version="6.1.352.51963" ExpectedHash="83CBB251DA3039C3FD62B366D0AC4E6E376D2A622FC696CCD4B74FFBFDC2EECD" />
+    <DocsvisionWebAssembly Include="$(DocsvisionWebDir)/DocsVision.Layout.WebClient.dll" Version="6.1.1568.19570" ExpectedHash="38B93BD99BF1395390A443018338CC962485374D41C7BA2FE5D96C79D5EFFF78" />
+    <DocsvisionWebAssembly Include="$(DocsvisionWebDir)/DocsVision.Platform.WebClient.dll" Version="6.1.1568.19570" ExpectedHash="DC30073157B2B5CD5EFAD8405D8C07DE4CC30E250A617BD27107F404C406AFF7" />
+    <DocsvisionWebAssembly Include="$(DocsvisionWebDir)/DocsVision.WebClient.Extensibility.dll" Version="6.1.1568.19570" ExpectedHash="CDE67093A0892D0A35488B83BC03F586187B7CBA7C824B76D10AE4BC69B74C4C" />
+    <DocsvisionWebAssembly Include="$(DocsvisionWebDir)/DocsVision.WebClientLibrary.ObjectModel.dll" Version="6.1.1568.19570" ExpectedHash="A54DFC7393B812C81C9577D06B750BD99925461804EE74DA80F8BB15568137B2" />
+  </ItemGroup>
+</Project>
