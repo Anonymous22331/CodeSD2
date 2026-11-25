@@ -9,7 +9,7 @@
     <IntermediateOutputPath>obj/$(Configuration)/$(WorkflowHandler)/</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(WorkflowHandler).cs" Condition="'$(WorkflowHandler)' != ''" />
+    <Compile Include="Handlers/$(WorkflowHandler).cs" Condition="'$(WorkflowHandler)' != ''" />
     <DocsvisionAssembly Include="@(DocsvisionCommonAssembly);@(DocsvisionWorkflowAssembly)" />
   </ItemGroup>
   <Target Name="ValidateWorkflowHandler" BeforeTargets="PrepareForBuild">
